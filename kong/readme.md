@@ -1,4 +1,9 @@
-先设置PROXY_IP
+# test in minikube
+# 安装kong
+```
+kubectl create -f insall-kong-all-in-one-dbless.yaml
+```
+# 设置PROXY_IP
 ```
 export PROXY_IP=$(minikube service -n kong kong-proxy --url | head -1)
 ```
