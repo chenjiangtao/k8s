@@ -1,0 +1,2 @@
+kubectl patch svc echo \
+  -p '{"metadata":{"annotations":{"konghq.com/plugins": "rl-by-ip\n"}}}'
